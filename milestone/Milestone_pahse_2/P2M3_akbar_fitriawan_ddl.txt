@@ -1,0 +1,53 @@
+CREATE TABLE table_m3 (
+    address                 VARCHAR NOT NULL,
+    rent                    INT NOT NULL,
+    beds                    INT NOT NULL,
+    baths                   INT NOT NULL,
+    type                    VARCHAR NOT NULL,
+    area_in_sqft            INT NOT NULL,
+    rent_per_sqft           FLOAT8 NOT NULL,
+    rent_category           VARCHAR NOT NULL,
+    frequency               VARCHAR NOT NULL,
+    furnishing              VARCHAR NOT NULL,
+    purpose                 VARCHAR NOT NULL,
+    posted_date             TIMESTAMP NOT NULL,
+    age_of_listing_in_days  INT NOT NULL,
+    location                VARCHAR NOT NULL,
+    city                    VARCHAR NOT NULL,
+    latitude                FLOAT8 NOT NULL,
+    longitude               FLOAT8 NOT NULL,
+    posted_month            INT NOT NULL,
+    posted_year             INT NOT NULL
+);
+
+
+
+
+COPY table_m3 (
+    address,
+    rent,
+    beds,
+    baths,
+    type,
+    area_in_sqft,
+    rent_per_sqft,
+    rent_category,
+    frequency,
+    furnishing,
+    purpose,
+    posted_date,
+    age_of_listing_in_days,
+    location,
+    city,
+    latitude,
+    longitude,
+    posted_month,
+    posted_year
+)
+FROM './akbar_new_data.csv'
+WITH (
+    FORMAT csv,
+    HEADER true,
+    DELIMITER ',',
+    NULL ''
+);

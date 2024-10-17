@@ -1,0 +1,42 @@
+- Jawab pertanyaan berikut dengan menggunakan kalimat Anda sendiri:
+
+1. Jelaskan apa yang dimaksud dengan NoSQL menggunakan pemahaman yang kalian ketahui !
+
+2. Jelaskan kapan harus menggunakan NoSQL dan Relational Database Management System !
+
+3. Sebutkan contoh 2 tools/platform NoSQL selain ElasticSearch beserta keunggulan tools/platform tersebut !
+
+4. Jelaskan apa yang Anda ketahui dari Airflow menggunakan pemahaman dan bahasa Anda sendiri !
+
+5. Jelaskan apa yang Anda ketahui dari Great Expectations menggunakan pemahaman dan bahasa Anda sendiri !
+
+6.  Jelaskan apa yang Anda ketahui dari Batch Processing menggunakan pemahaman dan bahasa Anda sendiri (Definisi, Contoh Kasus Penggunaan, Tools, dll) !
+
+Jawab:
+
+1. NoSQL adalah jenis database non-relational yang mana digunakan untuk menyimpan data yang tidak cocok dengan struktur relasional tradisional seperti json, document, graf, audio, dll.
+
+2. - Kapan Menggunakan NoSQL dan RDBMS NoSQL:
+	- Ketika data yang disimpan tidak memiliki skema yang tetap atau sering berubah.
+	- Untuk aplikasi yang membutuhkan skala besar dan performa tinggi, seperti media sosial, data sensor IoT, atau aplikasi real-time.
+	- Saat membutuhkan kemampuan penyimpanan data terdistribusi dan replikasi otomatis. 
+   - RDBMS (Relational Database Management System):
+
+	- Ketika data memiliki skema yang jelas dan relasi antar tabel penting untuk aplikasi.
+	- Untuk aplikasi yang membutuhkan konsistensi dan integritas data yang tinggi, seperti sistem perbankan atau aplikasi keuangan.
+	- Saat melakukan operasi transaksi yang membutuhkan ACID (Atomicity, Consistency, Isolation, Durability).
+3. - MongoDB
+	-  MongoDB menggunakan model dokumen yang fleksibel, memungkinkan penyimpanan data dalam format JSON-like BSON
+   - Cassandra
+	- Cassandra adalah basis data kolom besar yang dirancang untuk menangani volume data yang sangat besar dengan ketersediaan tinggi tanpa single point of failure.
+4. Airflow adalah platform open-source yang digunakan untuk membuat, menjadwalkan, dan memonitor alur kerja (workflow). intinya digunakan untuk mengotomatisasi proses data secara terjadwal.
+
+5. Great Expectations adalah alat open-source untuk validasi, dokumentasi, dan profil data.
+
+6. Batch Processing adalah metode pemrosesan data dalam jumlah besar yang dieksekusi secara berkala atau berdasarkan jadwal tertentu.
+	- Contoh Kasus Penggunaan:
+		- proses menghitung gaji karyawan secara bulan
+		- menghitung restock inventory
+	- Tools:
+		- Apache Spark
+		- biguery
